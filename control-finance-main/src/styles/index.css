@@ -1,0 +1,464 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.navHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: 8.25rem;
+    padding: 1.75rem 1rem 1.75rem 1rem;
+    gap: 20px;
+    background-color: var(--color-grey-5);
+}
+
+.titleBrand {
+    color: var(--color-brand-1);
+}
+
+h1 {
+    font: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-1);
+    font-size: 20px;
+}
+
+.newValueButton {
+    width: 90vw;
+    height: 32px;
+    font-size: var(--font-size-3);
+    padding: 0 14px;
+    color: var(--color-mode);
+    background-color: var(--color-brand-1);
+    border: solid;
+    border-radius: var(--radius-1);
+}
+
+.mainBody {
+    margin: 16px;
+}
+
+.transacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90vw;
+    height: 5.5625rem;
+    margin-top: 24px;
+}
+
+.transacao>p {
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
+
+.buttonTransacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.buttonFilterAll, .buttonFilterEntrada, .buttonFilterSaida {
+    width: 5.5625rem;
+    height: 32px;
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2);
+    background-color: var(--color-mode);
+    border-color: var(--color-grey-5);
+    border-style: solid;
+    border-radius: var(--radius-1);
+}
+.buttonFilterAll:hover, .buttonFilterEntrada:hover, .buttonFilterSaida:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.somaValores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 44px;
+    padding: 14px 16px;
+    margin-top: 24px;
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-1);
+    border: solid;
+    border-radius: var(--radius-1);
+    border-color: var(--color-grey-4);
+}
+
+.somaValores>p {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-3);
+}
+
+.valoresTransacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 2.625rem;
+    border: 1.5px solid;
+    border-radius: var(--radius-1);
+    border-color: var(--color-grey-5);
+    padding: 8px 16px;
+    background-color: var(--color-mode);
+}
+
+.valoresTransacao>p {
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
+
+.valoresTransacao>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 128px;
+    height: 1.625rem;
+}
+
+.tipoTransacao {
+    width: 68px;
+    height: 26px;
+    padding: 5px 12px;
+    gap: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: var(--radius-2);
+    border-color: var(--color-grey-4);
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-1);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-4);
+}
+
+.modalController {
+    height: 27rem;
+    width: 343px;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    border-radius: var(--radius-1);
+    border-color: var(--color-mode);
+    padding: 24px;
+    gap: 25px;
+}
+
+.modalContainer {
+    height: 375px;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 295px;
+    margin-bottom: 10px;
+}
+
+.modalTitulo>h2 {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-2);
+    color: var(--color-grey-1);
+}
+
+.buttonFechar {
+    width: 35px;
+    height: 30px;
+    background-color: var(--color-grey-5);
+    border: solid;
+    border-radius: var(--radius-2);
+    border-color: var(--color-grey-5);
+    gap: 10px;
+}
+
+.modalContainer>p {
+    height: 42px;
+    width: 295px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-3);
+    color: var(--color-grey-2);
+}
+
+.modalValor {
+    height: 69px;
+    width: 295px;
+    gap: 8px;
+}
+
+.modalValor>h3 {
+    height: 17px;
+    width: 35px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-3);
+    color: var(--color-grey-1);
+    margin-bottom: 8px;
+}
+
+.modalValor>input {
+    height: 44px;
+    width: 295px;
+    border: solid 2px;
+    border-radius: var(--radius-1);
+    border-color: var(--color-grey-3);
+    background-color: var(--color-mode);
+    color: var(--color-grey-2);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-3);
+    padding: 14px;
+    opacity: 1;
+}
+
+.modalValor>input ::placeholder {
+    color: var(--color-grey-2);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-3);
+    padding: 14px;
+    opacity: 1;
+}
+
+.modalTipoDeValor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 295px;
+    gap: 12px;
+}
+
+.modalTipoDeValor>h3 {
+    width: 88px;
+    height: 17px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-3);
+    color: var(--color-grey-1);
+}
+
+.modalButtonTipoTransacao {
+    width: 295px;
+    height: 32px;
+    background-color: var(--color-mode);
+    border: 2px solid;
+    border-radius: var(--radius-1);
+    border-color: var(--color-grey-5);
+    padding: 0px 14px;
+    gap: 10px;
+    color: var(--color-grey-2);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+}
+
+.modalButtonTipoTransacao:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+}
+.selected, .filtred{
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+}
+.modalButtonFinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 295px;
+    height: 31px;
+}
+
+.buttonNormal {
+    width: 139.5px;
+    height: 31px;
+    background-color: var(--color-grey-5);
+    border: 1.5px solid;
+    border-radius: var(--radius-1);
+    border-color: var(--color-grey-5);
+    padding: 7px 14px;
+    gap: 10px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+}
+
+.buttonNormal:hover {
+    background-color: var(--color-grey-4);
+    border-color: var(--color-grey-4);
+}
+
+.buttonBrand {
+    width: 139.5px;
+    height: 31px;
+    background-color: var(--color-brand-1);
+    border: 1.5px solid;
+    border-radius: var(--radius-1);
+    border-color: var(--color-brand-1);
+    padding: 7px 14px;
+    gap: 10px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    color: var(--color-mode);
+}
+
+.buttonBrand:hover {
+    background-color: var(--color-brand-2);
+    border-color: var(--color-brand-2);
+}
+
+@media (min-width: 768px) and (max-width: 2580px) {
+    #app {
+        display: flex;
+        align-items: center;
+    }
+
+    .navHome {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 109px;
+    }
+
+    .newValueButton {
+        width: 164px;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .transacao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 45vw;
+        height: 32px;
+        margin-top: 62px;
+    }
+
+    .buttonFilterAll {
+        width: 70px;
+        height: 32px;
+    }
+
+    .buttonFilterEntrada {
+        width: 89px;
+        height: 32px;
+    }
+
+    .buttonFilterSaida {
+        width: 74px;
+        height: 32px;
+    }
+
+    .valores {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45vw;
+        gap: 10px;
+    }
+
+    .somaValores {
+        width: 45vw;
+        margin-top: 62px;
+    }
+
+    .valoresTransacao {
+        width: 45vw;
+        height: 42px;
+        margin-top: 10px;
+    }
+
+    .modalController {
+        height: 350px;
+        width: 428px;
+        margin-top: 35vh;
+        margin-left: 35vw;
+    }
+
+    .modalContainer {
+        height: 280px;
+        width: 370px;
+    }
+
+    .modalTitulo {
+        width: 380px;
+    }
+
+    .modalContainer>p {
+        width: 380px;
+    }
+
+    .modalValor {
+        width: 380px;
+    }
+
+    .modalValor>input {
+        width: 380px;
+    }
+    .modalTipoDeValor {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 86px;
+        width: 380px;
+    }
+    .modalTipoDeValor>button{
+        width: 81px;
+    }
+    .modalButtonFinal {
+        width: 380px;
+        gap: 16px;
+        justify-content: flex-end;
+    }
+    .buttonNormal{
+        width: 89px;
+    }
+    .buttonBrand{
+        width: 89px;
+    }
+}
