@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <main id="app">
+      <nav class="navHome">
+        <h1> <span class="titleBrand">Control</span> Finance</h1>
+        <button class="newValueButton">Registrar novo valor</button>
+        <dialog class="modalController">
+          <div class="modalContainer">
+            <div class="modalTitulo">
+              <h2>Registro de valor</h2>
+              <img src="./src/assets/Frame 8Fechar.png" alt="" class="buttonFechar">
+            </div>
+            <p>
+              Digite o valor e em seguida aperte no botão referente
+              ao tipo de valor
+            </p>
+            <div class="modalValor">
+              <h3>Valor</h3>
+              <input type="number" value="" id="valorInserido" placeholder="  R$  00,00">
+            </div>
+            <div class="modalTipoDeValor">
+              <h3>Tipo de valor</h3>
+              <button type="button" value="Entrada" id="buttonTransactionEntrada" class="modalButtonTipoTransacao">Entrada</button>
+              <button type="button" value="Saída" id="buttonTransactionSaida" class="modalButtonTipoTransacao">Saída</button>
+            </div>
+            <div class="modalButtonFinal">
+              <button class="buttonNormal">Cancelar</button>
+              <button class="buttonBrand">Inserir valor</button>
+            </div>
+          </div>
+        </dialog>
+      </nav>
+      <div class="mainBody">
+        <div class="transacao">
+          <p>Resumo Financeiro</p>
+          <div class="buttonTransacao">
+            <button class="buttonFilterAll" value="All">Todos</button>
+            <button class="buttonFilterEntrada" value="Entrada">Entradas</button>
+            <button class="buttonFilterSaida" value="Saída">Saídas</button>
+          </div>
+        </div>
+        <div class="valores">
+          <div class="somaValores">
+            <p>Soma dos valores</p>
+            <p class="somaTotal">R$ 2.120,00</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./src/scripts/modal.js"></script>
+    <script src="./src/scripts/valuesDatabase.js" type="module"></script>
+    <script src="./src/scripts/index.js" type="module"></script>
+  </body>
+</html>
